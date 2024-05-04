@@ -41,10 +41,10 @@ class SideMenuItemWithGlobal extends StatefulWidget {
   final String? title;
 
   /// A Icon to display before [title]
-  final Icon? icon;
+  final String? icon;
 
   /// This is displayed instead if [icon] is null
-  final Widget? iconWidget;
+  final String? iconWidget;
 
   /// Text show next to the icon as badge
   /// By default this is null
@@ -194,18 +194,24 @@ class _SideMenuItemState extends State<SideMenuItemWithGlobal> {
   // Generates an icon based on the mainIcon and iconWidget provided. If mainIcon is null, it returns iconWidget or a SizedBox if iconWidget is also null.
   // Determines the color and size of the icon based on the current selection state. If a badgeContent is provided,
   // wraps the icon with a Badge widget using the badgeContent, badgeColor, and position specified.
-  Widget _generateIcon(Icon? mainIcon, Widget? iconWidget) {
-    if (mainIcon == null) return iconWidget ?? const SizedBox();
-    final Color iconColor = _isCurrentSideMenuItemSelected()
-        ? widget.global.style.selectedIconColor ?? Colors.black
-        : widget.global.style.unselectedIconColor ?? Colors.black54;
+  Widget _generateIcon(String? mainIcon, iconWidget) {
+    // if (mainIcon == null) return iconWidget ?? const SizedBox();
+    bool isSelected = _isCurrentSideMenuItemSelected();
+    final Color iconColor = isSelected
+        ? widget.global.style.selectedIconColor ?? Colors.red
+        : widget.global.style.unselectedIconColor ?? Colors.red;
+
+    final Color selectedIconColor = Colors.white;
+    final Color finalIconColor = isSelected ? selectedIconColor : Colors.purple;
+
     final double iconSize = widget.global.style.iconSize ?? 24;
 
-    final Icon icon = Icon(
-      mainIcon.icon,
-      color: iconColor,
-      size: iconSize,
-    );
+    final Widget icon = iconWidget != null
+        ? Image.asset(
+            iconWidget!,
+            color: finalIconColor,
+          )
+        : SizedBox();
 
     return widget.badgeContent == null
         ? icon

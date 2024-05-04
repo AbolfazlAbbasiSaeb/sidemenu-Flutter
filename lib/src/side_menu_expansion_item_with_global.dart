@@ -15,10 +15,10 @@ class SideMenuExpansionItemWithGlobal extends StatefulWidget {
   final Global global;
 
   /// A Icon to display before [title]
-  final Icon? icon;
+  final icon;
 
   /// This is displayed instead if [icon] is null
-  final Widget? iconWidget;
+  final String? iconWidget;
 
   /// The Children widgets
   final List<SideMenuItemWithGlobal> children;
@@ -52,26 +52,30 @@ class _SideMenuExpansionState extends State<SideMenuExpansionItemWithGlobal> {
     isExpanded = widget.global.expansionStateList[widget.index];
   }
 
-  // Generates an icon widget based on the main icon and icon widget provided. 
-  // If the main icon is null, returns the icon widget or a SizedBox if no icon widget is provided. 
-  // Determines the icon color and size based on the expansion state and global styling. 
+  // Generates an icon widget based on the main icon and icon widget provided.
+  // If the main icon is null, returns the icon widget or a SizedBox if no icon widget is provided.
+  // Determines the icon color and size based on the expansion state and global styling.
   // Returns an Icon widget with the specified icon, color, and size.
-  Widget _generateIconWidget(Icon? mainIcon, Widget? iconWidget) {
-    if (mainIcon == null) return iconWidget ?? const SizedBox();
+  Widget _generateIconWidget(Icon? mainIcon, String? iconWidget) {
+    // if (mainIcon == null) return iconWidget ?? const SizedBox();
 
     final bool isExpanded = widget.global.expansionStateList[widget.index];
     final Color iconColor = isExpanded
         ? widget.global.style.selectedIconColorExpandable ??
             widget.global.style.selectedColor ??
-            Colors.black
+            Colors.purple
         : widget.global.style.unselectedIconColorExpandable ??
             widget.global.style.unselectedIconColor ??
-            Colors.black54;
+            Colors.purple;
     final double iconSize = widget.global.style.iconSizeExpandable ??
         widget.global.style.iconSize ??
         24;
 
-    return Icon(mainIcon.icon, color: iconColor, size: iconSize);
+    return Image.asset(
+      iconWidget!,
+      color: Colors.purple,
+    );
+    // return Icon(mainIcon.icon, color: iconColor, size: iconSize);
   }
 
   @override
@@ -90,7 +94,8 @@ class _SideMenuExpansionState extends State<SideMenuExpansionItemWithGlobal> {
               leading: SizedBox(
                 // Ensures the icon does not take the full tile width
                 width: 40.0, // Adjust size constraints as required
-                child: _generateIconWidget(widget.icon, widget.iconWidget),
+                child: _generateIconWidget(
+                    widget.icon as Icon?, widget.iconWidget),
               ),
               // The title should only take space when SideMenuDisplayMode is open
               maintainState: true,

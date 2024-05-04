@@ -13,7 +13,7 @@ class SideMenuExpansionItem {
   final Icon? icon;
 
   /// This is displayed instead if [icon] is null
-  final Widget? iconWidget;
+  final String? iconWidget;
 
   final List<SideMenuItem> children;
 
@@ -25,5 +25,5 @@ class SideMenuExpansionItem {
     required this.children,
   })  : assert(title != null || icon != null,
             'Title and icon should not be empty at the same time'),
-        super(); 
+        super();
 }

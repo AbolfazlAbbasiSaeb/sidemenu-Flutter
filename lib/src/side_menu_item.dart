@@ -11,10 +11,10 @@ class SideMenuItem {
   final void Function(int index, SideMenuController sideMenuController)? onTap;
 
   /// A Icon to display before [title]
-  final Icon? icon;
+  final String? icon;
 
   /// This is displayed instead if [icon] is null
-  final Widget? iconWidget;
+  final String? iconWidget;
 
   /// Text show next to the icon as badge
   /// By default this is null

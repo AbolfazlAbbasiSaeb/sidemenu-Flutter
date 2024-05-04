@@ -1,7 +1,7 @@
 name: easy_sidemenu
 description: An easy to use side menu (navigation rail) in flutter and can used for navigation
 version: 0.6.0
-homepage: https://github.com/Jamalianpour/easy_sidemenu
+homepage: https://github.com/AbolfazlAbbasiSaeb/sidemenu-Flutter
 
 environment:
   sdk: ">=2.14.0 <4.0.0"
@@ -19,3 +19,6 @@ dev_dependencies:
   flutter_lints: 3.0.1
 
 flutter:
+
+  assets:
+    - assets/
