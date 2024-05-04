@@ -73,7 +73,7 @@ class _SideMenuExpansionState extends State<SideMenuExpansionItemWithGlobal> {
 
     return Image.asset(
       iconWidget!,
-      color: Colors.purple,
+      color: iconColor,
     );
     // return Icon(mainIcon.icon, color: iconColor, size: iconSize);
   }

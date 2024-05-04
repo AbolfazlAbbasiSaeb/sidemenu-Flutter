@@ -308,6 +308,7 @@ class _SideMenuItemState extends State<SideMenuItemWithGlobal> {
           ),
         ),
       );
+   
     } else {
       return ValueListenableBuilder(
         valueListenable: widget.global.displayModeState,
