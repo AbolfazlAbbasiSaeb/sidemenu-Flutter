@@ -2,7 +2,7 @@
 <h1 align="center">Easy Sidemenu</h1>
 <img align="center" src="https://raw.githubusercontent.com/Jamalianpour/easy_sidemenu/master/images/logo.png" alt="logo" height=170/>
 </br>
-<a href="https://github.com/Jamalianpour/easy_sidemenu/license">
+<a href="">
     <img alt="GitHub" src="https://img.shields.io/github/license/Jamalianpour/easy_sidemenu">
 </a>
 <a href="https://pub.dev/packages/easy_sidemenu">
@@ -27,11 +27,3 @@ Sidemenu is similar to bottom navigation bar but in the side of screen and usual
 | Auto                              |
 | --------------------------------- |
 | ![Auto](images/easy_sidemenu.gif) |
-
-## Demo
-
-You can see web demo here: [https://jamalianpour.github.io/easy_sidemenu](https://jamalianpour.github.io/easy_sidemenu)
-
-## Usage
-
-##### 1. add dependencies into you project pubspec.yaml file
