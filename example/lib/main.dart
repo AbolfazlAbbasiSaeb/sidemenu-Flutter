@@ -1,4 +1,4 @@
-import 'package:easy_sidemenu/easy_sidemenu.dart';
+import 'package:easy_sidemenu_plus_plus/easy_sidemenu_plus_plus.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,12 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'easy_sidemenu Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        useMaterial3: false
-      ),
-      home: const MyHomePage(title: 'easy_sidemenu Demo'),
+      title: 'easy_sidemenu_plus_plus Demo',
+      theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: false),
+      home: const MyHomePage(title: 'easy_sidemenu_plus_plus Demo'),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -77,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     maxWidth: 150,
                   ),
                   child: Image.asset(
-                    'assets/images/easy_sidemenu.png',
+                    'assets/images/easy_sidemenu_plus_plus.png',
                   ),
                 ),
                 const Divider(
@@ -206,7 +203,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
-          const VerticalDivider(width: 0,),
+          const VerticalDivider(
+            width: 0,
+          ),
           Expanded(
             child: PageView(
               controller: pageController,

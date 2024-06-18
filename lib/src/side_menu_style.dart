@@ -1,4 +1,4 @@
-import 'package:easy_sidemenu/src/side_menu_display_mode.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_display_mode.dart';
 import 'package:flutter/material.dart';
 
 class SideMenuStyle {
@@ -38,7 +38,7 @@ class SideMenuStyle {
 
   /// Size of icon on [SideMenuItem]
   double? iconSize;
-  
+
   /// Style of [title] text when item is selected in [SideMenuExpandableItem]
   TextStyle? selectedTitleTextStyleExpandable;
 

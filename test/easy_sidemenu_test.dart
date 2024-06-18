@@ -1,18 +1,18 @@
-import 'package:easy_sidemenu/src/side_menu.dart';
-import 'package:easy_sidemenu/src/side_menu_controller.dart';
-import 'package:easy_sidemenu/src/side_menu_display_mode.dart';
-import 'package:easy_sidemenu/src/side_menu_item.dart';
-import 'package:easy_sidemenu/src/side_menu_style.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_controller.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_display_mode.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_item.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:easy_sidemenu/src/side_menu_item_with_global.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_item_with_global.dart';
 
 final controller = SideMenuController();
 
 const compactWidth = 64.0;
 
 void main() {
-  /// This is a regression test for https://github.com/Jamalianpour/easy_sidemenu/issues/46
+  /// This is a regression test for https://github.com/Jamalianpour/easy_sidemenu_plus_plus/issues/46
   testWidgets(
       'When displayMode is "compact", the width is correct after building the widget twice',
       (tester) async {

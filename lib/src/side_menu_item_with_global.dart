@@ -1,8 +1,8 @@
 import 'package:badges/badges.dart' as bdg;
 import 'package:flutter/material.dart';
-import 'package:easy_sidemenu/src/side_menu_display_mode.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_display_mode.dart';
 import 'global/global.dart';
-import 'package:easy_sidemenu/src/side_menu_controller.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_controller.dart';
 
 typedef SideMenuItemBuilder = Widget Function(
     BuildContext context, SideMenuDisplayMode displayMode);
@@ -308,7 +308,6 @@ class _SideMenuItemState extends State<SideMenuItemWithGlobal> {
           ),
         ),
       );
-   
     } else {
       return ValueListenableBuilder(
         valueListenable: widget.global.displayModeState,

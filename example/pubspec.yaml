@@ -1,4 +1,4 @@
-name: easy_sidemenu_example
+name: easy_sidemenu_plus_plus_example
 description: An example for easy sidemenu
 
 version: 1.0.0+1
@@ -14,7 +14,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  easy_sidemenu:
+  easy_sidemenu_plus_plus:
     path: ../
   flutter_lints: ^1.0.0
 

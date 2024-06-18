@@ -1,12 +1,12 @@
-import 'package:easy_sidemenu/src/side_menu_display_mode.dart';
-import 'package:easy_sidemenu/src/side_menu_hamburger_mode.dart';
-import 'package:easy_sidemenu/src/side_menu_item.dart';
-import 'package:easy_sidemenu/src/side_menu_style.dart';
-import 'package:easy_sidemenu/src/side_menu_toggle.dart';
-import 'package:easy_sidemenu/src/side_menu_item_with_global.dart';
-import 'package:easy_sidemenu/src/side_menu_expansion_item.dart';
-import 'package:easy_sidemenu/src/side_menu_expansion_item_with_global.dart';
-import 'package:easy_sidemenu/src/side_menu_controller.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_display_mode.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_hamburger_mode.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_item.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_style.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_toggle.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_item_with_global.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_expansion_item.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_expansion_item_with_global.dart';
+import 'package:easy_sidemenu_plus_plus/src/side_menu_controller.dart';
 import 'package:flutter/material.dart';
 import 'global/global.dart';
 
