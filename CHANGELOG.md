@@ -60,3 +60,11 @@
 
 ## [0.1.0] 
 * First release
+
+## [0.1.1] - 2024-06-18
+### Added
+- Added new customization options for side menu items.
+
+### Fixed
+- Fixed an issue with the navigation controller.
+- Improved performance for larger menus.
